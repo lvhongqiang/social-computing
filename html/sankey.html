@@ -21,6 +21,8 @@
     请输入搜索关键词/标题/doi:<el-input v-model="keyword" placeholder="请输入搜索关键词/标题/doi"></el-input>
     请输入被引数最小值：<el-input v-model="citingNum" placeholder="请输入被引数最小值"></el-input>
     <el-button @click="filt">搜索</el-button>
+    <small>注：图中右侧文章引用左侧文章。点击节点可查看文章详情。数据加载较慢。</small>
+
     <el-dialog :visible.sync="visible" title="Paper Info">
         <p>Title: {{paper.title}}</p>
         <p>Authors: {{paper.author}}</p>
