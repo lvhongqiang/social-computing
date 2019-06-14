@@ -1,3 +1,16 @@
+### 数据：
+##### 数据库：MySQL（连接信息见群内）
+##### 数据表：
+* paper_data: 文章表，包含24255篇相关文章，其中18274篇为标题或关键词匹配，4981篇为摘要匹配。
+* citing_data: 引用关联表，parent_doi列为被引文章的doi，doi列为施引文章。
+* 引用关系图：
+  * 显示标题及关键词匹配文章的引用关系，可通过关键词搜索及被引数量限制检索。
+  * 点击节点可显示具体文章信息。
+  * 以下两种图表数据源相同。
+    * 关系图：http://www.lvhongqiang.com/social-computing/gexf.html（注：数据加载较慢，关系图显示会有延迟）
+    * 桑基图： http://www.lvhongqiang.com/social-computing/sankey.html
+   * 关系图源码 [/html/](/html)
+
 ### 搜索关键词:
 * Social Computing/社会计算
 * Social Context Mining/社会文本挖掘
